@@ -4,20 +4,50 @@
     <meta charset="UTF-8" />
     <title>Git</title>
     <style>
-      #bradensHeading {
-        border: 4px solid black;
-        border-radius: 5px;
-        display: flex;
-        justify-content: center;
-        padding: 20px 20px;
-      }
+
+.header-container {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.jacobs-heading {
+	font-size: 100px;
+	font-weight: 900;
+	background-color: black;
+	color: #ffffff;
+	display: block;
+	padding: .5em;
+}
+
+.jacobs-heading:nth-child(2) {
+	position: absolute;
+	background-color: #ffffff;
+	color: black;
+	clip-path: inset(-1% -1% 50% -1%);
+      
+  #bradensHeading {
+    border: 4px solid black;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    padding: 20px 20px;
+  }
     </style>
   </head>
   <body>
     <div class="topnav"></div>
     <div>
-      
+     
       <h1>Git Workflow Git</h1>     
+      <div class="header-container">
+        <h1 class="jacobs-heading">Jacobs Header is here! </h1>
+        <h1 class="jacobs-heading"> Jacobs Header is here!</h1>
+
+      </div>
+
+			<h1>Git Workflow Git</h1>     
       <p>Some Change</p>
 			<h1 id="bradensHeading">Hello From Braden Bird</h1>
 
