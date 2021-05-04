@@ -6,10 +6,19 @@
   </head>
   <body>
     <div>
-      <h1>Git Workflow Demo</h1>
-      <h3>Getting Started</h3>
-      <p>I am good at instructions.</p>
-      <p>Meme picture-- but in your head.</p>
+			<form>
+				<input type="text" id="email" name="email">
+				<label for="email">Enter your email and I will show it to you</label>
+				<input type="submit">
+			</form>
     </div>
   </body>
+
+	<script>
+		document.getElementById("email").addEventListener("focus", sendEmail)
+
+		function sendEmail(e){
+			console.log(e.target.value)
+		}
+	</script>
 </html>
